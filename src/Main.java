@@ -9,5 +9,12 @@ public class Main {
         fruitPrices.put("배", 10320);
         fruitPrices.put("수박", 15920);
         fruitPrices.put("멜론", 10630);
+
+        System.out.println(fruitPrices.containsKey("사과"));
+        System.out.println(fruitPrices.containsKey("포도"));
+        System.out.println(fruitPrices.containsValue(17980));
+        System.out.println(fruitPrices.containsValue(9999));
+
+
     }
 }
