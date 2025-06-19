@@ -10,8 +10,11 @@ public class Main {
         fruitPrices.put("수박", 15920);
         fruitPrices.put("멜론", 10630);
 
-        System.out.println(fruitPrices.getOrDefault("사과", 500));
-        System.out.println(fruitPrices.getOrDefault("포도", 500));
+        fruitPrices.replace("사과", 100);
+        fruitPrices.remove("멜론");
+        for(Map.Entry<String, Integer> entry : fruitPrices.entrySet()) {
+            System.out.println(entry.getKey() + entry.getValue());
+        }
 
 
     }
